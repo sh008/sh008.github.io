@@ -43,7 +43,67 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="hero">
+  <div id="home"></div>
+  
+  <!-- Mobile Hero Slider -->
+  <section class="mobile-hero-section d-lg-none">
+    <div id="mobileHeroCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators mb-5">
+        <button type="button" data-bs-target="#mobileHeroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#mobileHeroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#mobileHeroCarousel" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner h-100">
+        <!-- Slide 1 -->
+        <div class="carousel-item active h-100">
+          <div class="mobile-hero-image" style="background-image: url('public/z-3422ic_cutout-1.jpg')"></div>
+          <div class="mobile-hero-overlay"></div>
+          <div class="carousel-caption mobile-hero-caption">
+            <div class="badge-pill mb-3 fade-in-up delay-1">
+              <i class="fas fa-star text-warning me-2"></i> Genie Lift
+            </div>
+            <h1 class="display-4 fw-bold mb-4 fade-in-up delay-2">High<br><span class="text-gradient">Performance</span></h1>
+            <div class="fade-in-up delay-3">
+              <a href="#contact" class="btn btn-primary rounded-pill px-4">Get Quote</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="carousel-item h-100">
+          <div class="mobile-hero-image" style="background-image: url('public/liebherr-mobile-material-handling-machine-lh-30_w1280.jpg')"></div>
+          <div class="mobile-hero-overlay"></div>
+          <div class="carousel-caption mobile-hero-caption">
+            <div class="badge-pill mb-3">
+              <i class="fas fa-tools text-warning me-2"></i> Liebherr
+            </div>
+            <h1 class="display-4 fw-bold mb-4">Heavy<br><span class="text-gradient">Duty</span></h1>
+            <div>
+              <a href="tel:+16478704714" class="btn btn-primary rounded-pill px-4">Call Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item h-100">
+          <div class="mobile-hero-image" style="background-image: url('public/f7854fedd1a40f3f9b94c45621ebaa5acb53e537-6720x4480.webp')"></div>
+          <div class="mobile-hero-overlay"></div>
+          <div class="carousel-caption mobile-hero-caption">
+            <div class="badge-pill mb-3">
+              <i class="fas fa-clock text-warning me-2"></i> 24/7 Support
+            </div>
+            <h1 class="display-4 fw-bold mb-4">Emergency<br><span class="text-gradient">Service</span></h1>
+            <div>
+              <a href="#contact" class="btn btn-primary rounded-pill px-4">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Desktop Hero Section -->
+  <section class="hero d-none d-lg-flex">
     <div class="hero-background">
       <div class="hero-particles"></div>
     </div>
@@ -512,9 +572,9 @@
           <p>Professional mechanical, hydraulic & electrical services across Ontario</p>
         </div>
         <div class="social-links">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <!-- <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
+          <a target="_blank" href="https://www.instagram.com/niro_group" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="footer-bottom">
           <p>&copy; 2025 NIRO Technical Solution. All rights reserved.</p>
