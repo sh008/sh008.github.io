@@ -302,6 +302,15 @@
                 </div>
               </div>
             </div>
+            <div class="slide">
+              <img src="public/hydrulic loading.png" alt="NIRO Technical Project 17" loading="lazy">
+              <div class="slide-overlay">
+                <div class="slide-content">
+                  <h4>Hydraulic Loading Bay</h4>
+                  <p>Safe and efficient dock operations</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -666,7 +675,7 @@
     class ImageSlider {
       constructor() {
         this.slider = document.querySelector('.slider-track');
-        this.slides = document.querySelectorAll('.slide');
+        this.slides = this.slider ? this.slider.querySelectorAll('.slide') : [];
         this.prevBtn = document.querySelector('.prev-btn');
         this.nextBtn = document.querySelector('.next-btn');
         this.dotsContainer = document.querySelector('.slider-dots');
@@ -681,6 +690,9 @@
       }
       
       init() {
+        if (!this.slider || !this.prevBtn || !this.nextBtn || !this.dotsContainer || !this.progressBar || this.slideCount === 0) {
+          return;
+        }
         this.createDots();
         this.updateSlider();
         this.bindEvents();
